@@ -1,0 +1,31 @@
+{
+  "id": "/",
+  "name": "Technician Management",
+  "short_name": "Technicel",
+  "description": "Technician work lists, drops, and days off.",
+  "start_url": "/login",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#122033",
+  "theme_color": "#122033",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

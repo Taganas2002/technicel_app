@@ -1,0 +1,5 @@
+# Dev-only overrides. Datasource defaults live in application.yml (dev profile).
+logging:
+  level:
+    com.technicel: DEBUG
+    org.hibernate.SQL: INFO

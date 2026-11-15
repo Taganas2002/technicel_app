@@ -1,0 +1,29 @@
+---
+description: Technician Management System development rules — phased builds, security, and checkpoints
+alwaysApply: true
+---
+
+# Technician Management System — development rules
+
+- Build in controlled phases. Do not implement the entire application in one pass.
+- Inspect existing implementation before changing architecture.
+- Do not rewrite working modules unnecessarily.
+- Group related changes first, then verify at a checkpoint.
+
+## Backend
+
+- Do not run `mvn clean install` after every edit.
+- Do not restart the backend after every small change.
+- Run focused tests for the changed feature.
+- Run a full backend build only at meaningful checkpoints (end of a phase).
+- Keep controllers thin. Keep business logic in services.
+- Do not expose JPA entities directly through REST. Use DTOs.
+- Always enforce authorization in the backend. Do not rely on React for security.
+- A technician must never access another technician's data by changing IDs in the URL.
+- Do not bypass failing tests.
+- Do not remove validation or security simply to make tests pass.
+
+## Frontend
+
+- Mobile responsiveness is mandatory, not optional.
+- Technician screens are mobile-first: cards, large tap targets, no wide tables, no horizontal scroll.
